@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website resmi Himpunan Mahasiswa Statistika Universitas Negeri Gorontalo">
+  <meta name="keywords" content="HIMASTA, Statistika, UNG, Universitas Negeri Gorontalo">
+  <meta name="author" content="HIMASTA UNG">
+
+  <title>HIMASTA - Universitas Negeri Gorontalo</title>
+  <link rel="icon" type="image/png" href="logo.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="logo-area">
+      <img src="logo.jpg" alt="Logo HIMASTA">
+      <h1>HIMASTA</h1>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="tentang.html#Tentang">Tentang</a></li>
+        <li><a href="pengurus.html#pengurus">Pengurus</a></li>
+        <li><a href="divisi.html#divisi">Divisi</a></li>
+        <li><a href="galeri.html#galeri">Galeri</a></li>
+        <li><a href="index.html#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <img src="ung.png" alt="Logo UNG" class="hero-logo">
+    <h1>Himpunan Mahasiswa Statistika</h1>
+    <p><b>Universitas Negeri Gorontalo</b></p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- KONTAK RESMI (IKON FOTO SENDIRI, BILINGUAL) -->
+<section class="section kontak-resmi" id="kontak">
+  <div class="container">
+
+    <div class="kontak-header center reveal">
+      <h2 data-lang="id">Kontak & Informasi</h2>
+      <h2 data-lang="en" style="display:none">Contact & Information</h2>
+
+      <p data-lang="id">Informasi resmi Himpunan Mahasiswa Statistika</p>
+      <p data-lang="en" style="display:none">
+        Official information of the Statistics Student Association
+      </p>
+
+      <button class="lang-toggle" id="langToggle">EN</button>
+    </div>
+
+    <div class="kontak-grid">
+
+      <!-- INFO -->
+      <div class="kontak-info reveal delay-1">
+
+        <div class="kontak-item">
+          <img src="ung.png" alt="Alamat" class="kontak-icon">
+          <div>
+            <h4 data-lang="id">Alamat </h4>
+            <h4 data-lang="en" style="display:none"> Address</h4>
+            <p>
+              Kampus 4 Universitas Negeri Gorontalo<br>
+              Program Studi Statistika<br>
+              Kabupaten Bone Bolango, Gorontalo
+            </p>
+          </div>
+        </div>
+
+        <div class="kontak-item">
+          <img src="email.png" alt="Email" class="kontak-icon">
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:himasta.ung01@gmail.com">
+              himasta.ung01@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="kontak-item">
+          <img src="ig.jpg" alt="Instagram" class="kontak-icon">
+          <div>
+            <h4>Instagram</h4>
+            <a href="https://instagram.com/himasta_ung" target="_blank">
+              @himasta_ung
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MAP -->
+      <div class="kontak-map reveal delay-2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15878.496606406364!2d123.1287!3d0.5544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x327ed51e9113928f%3A0x650215a69789b549!2sUniversitas%20Negeri%20Gorontalo%20Kampus%204!5e0!3m2!1sid!2sid!4v1710000000000"
+          loading="lazy">
+        </iframe>
+
+        <a
+          href="https://www.google.com/maps/place/Universitas+Negeri+Gorontalo+-+Kampus+4/"
+          target="_blank"
+          class="map-btn">
+          📍 Directions
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<footer>
+  <p>© <span id="year"></span> HIMASTA Universitas Negeri Gorontalo</p>
+</footer>
+
+
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modal-img">
+  <div id="modal-caption"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website resmi Himpunan Mahasiswa Statistika Universitas Negeri Gorontalo">
+  <meta name="keywords" content="HIMASTA, Statistika, UNG, Universitas Negeri Gorontalo">
+  <meta name="author" content="HIMASTA UNG">
+
+  <title>HIMASTA - Universitas Negeri Gorontalo</title>
+  <link rel="icon" type="image/png" href="logo.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header>
+  <div class="nav-container">
+    <div class="logo-area">
+      <img src="logo.jpg" alt="Logo HIMASTA">
+      <h1>HIMASTA</h1>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="tentang.html#Tentang">Tentang</a></li>
+        <li><a href="pengurus.html#pengurus">Pengurus</a></li>
+        <li><a href="divisi.html#divisi">Divisi</a></li>
+        <li><a href="galeri.html#galeri">Galeri</a></li>
+        <li><a href="index.html#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <img src="ung.png" alt="Logo UNG" class="hero-logo">
+    <h1>Himpunan Mahasiswa Statistika</h1>
+    <p><b>Universitas Negeri Gorontalo</b></p>
+  </div>
+</section>
+
+
+
+<!-- GALERI MODERN -->
+<section class="section light" id="galeri">
+  <div class="container">
+    <h2 class="center">Dokumentasi Kegiatan HIMASTA</h2>
+
+    <!-- FILTER BUTTON -->
+    <div class="gallery-filter">
+      <button class="filter-btn active" onclick="filterGallery('all')">Semua</button>
+      <button class="filter-btn" onclick="filterGallery('seminar')">Rapat Kerja</button>
+      <button class="filter-btn" onclick="filterGallery('lomba')">Bersama</button>
+      <button class="filter-btn" onclick="filterGallery('pengabdian')"> ??? </button>
+    </div>
+
+    <!-- SLIDESHOW -->
+    <div class="slideshow-container">
+      <img id="slide-img" src="bg1.jpg">
+    </div>
+
+    <!-- GRID -->
+    <div class="gallery-grid">
+
+      <div class="gallery-item seminar">
+        <img src="raker.jpg" onclick="openModal('raker.jpg','Rapat Kerja HIMASTA 2026')">
+      </div>
+
+      <div class="gallery-item lomba">
+        <img src="bg1.jpg" onclick="openModal('bg1.jpg','Foto Bersama Selesai Rapat')">
+      </div>
+      <div class="gallery-item lomba">
+        <img src="bg2.jpg" onclick="openModal('bg2.jpg','Foto Bersama Selesai MUBES HIMASTA')">
+      </div>
+
+      <div class="gallery-item pengabdian">
+        <img src="2.jpg" onclick="openModal('galeri3.jpg','Pengabdian Literasi Data Sekolah')">
+      </div>
+
+      <div class="gallery-item seminar">
+        <img src=".jpg" onclick="openModal('galeri4.jpg','Workshop Data Science HIMASTA')">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<footer>
+  <p>© <span id="year"></span> HIMASTA Universitas Negeri Gorontalo</p>
+</footer>
+
+
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modal-img">
+  <div id="modal-caption"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

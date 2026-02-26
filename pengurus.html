@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website resmi Himpunan Mahasiswa Statistika Universitas Negeri Gorontalo">
+  <meta name="keywords" content="HIMASTA, Statistika, UNG, Universitas Negeri Gorontalo">
+  <meta name="author" content="HIMASTA UNG">
+
+  <title>HIMASTA - Universitas Negeri Gorontalo</title>
+  <link rel="icon" type="image/png" href="logo.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+   <header>
+  <div class="nav-container">
+    <div class="logo-area">
+      <img src="logo.jpg" alt="Logo HIMASTA">
+      <h1>HIMASTA</h1>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="tentang.html#Tentang">Tentang</a></li>
+        <li><a href="pengurus.html#pengurus">Pengurus</a></li>
+        <li><a href="divisi.html#divisi">Divisi</a></li>
+        <li><a href="galeri.html#galeri">Galeri</a></li>
+        <li><a href="index.html#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <img src="ung.png" alt="Logo UNG" class="hero-logo">
+    <h1>Himpunan Mahasiswa Statistika</h1>
+    <p><b>Universitas Negeri Gorontalo</b></p>
+  </div>
+</section>
+
+
+
+<!--Pengurus-->
+<section class="section pengurus-modern" id="pengurus">
+  <div class="pengurus-wrapper">
+   <!-- ================= DPO ================= -->
+<h2 class="center section-title">Dewan Pertimbangan Organisasi</h2>
+<p class="center section-subtitle">Periode 2026</p>
+
+<div class="pengurus-grid dpo-grid">
+
+  <div class="pengurus-card dpo" onclick="openProfile('dpo1')">
+    <div class="pengurus-img">
+      <img src="images/dpo1.jpg" alt="DPO 1">
+      <span class="badge">DPO</span>
+    </div>
+    <div class="pengurus-info">
+      <h3>NAMA DPO 1</h3>
+      <p>Klik untuk lihat profil</p>
+    </div>
+  </div>
+
+  <div class="pengurus-card dpo" onclick="openProfile('dpo2')">
+    <div class="pengurus-img">
+      <img src="images/dpo2.jpg" alt="DPO 2">
+      <span class="badge">DPO</span>
+    </div>
+    <div class="pengurus-info">
+      <h3>NAMA DPO 2</h3>
+      <p>Klik untuk lihat profil</p>
+    </div>
+  </div>
+
+  <div class="pengurus-card dpo" onclick="openProfile('dpo3')">
+    <div class="pengurus-img">
+      <img src="images/dpo3.jpg" alt="DPO 3">
+      <span class="badge">DPO</span>
+    </div>
+    <div class="pengurus-info">
+      <h3>NAMA DPO 3</h3>
+      <p>Klik untuk lihat profil</p>
+    </div>
+  </div>
+
+</div>
+<!-- ================= END DPO ================= -->
+
+    <h1 class="center section-title">Struktur Kepengurusan</h1>
+    <p class="center section-subtitle">Periode 2026</p>
+
+    <div class="pengurus-grid">
+
+      <!-- Ketua -->
+      <div class="pengurus-card ketua" onclick="openProfile('ketua')">
+        <div class="pengurus-img">
+          <img src="images/ketua.jpg" alt="Ketua HIMASTA">
+          <span class="badge">Ketua</span>
+        </div>
+        <div class="pengurus-info">
+          <h3>PUTRI KARTIKA ABDULLAH</h3>
+          <p>Klik untuk lihat profil</p>
+        </div>
+      </div>
+
+      <!-- Sekretaris -->
+      <div class="pengurus-card" onclick="openProfile('sekretaris')">
+        <div class="pengurus-img">
+          <img src="imam.jpeg" alt="Sekretaris HIMASTA">
+          <span class="badge">Sekretaris</span>
+        </div>
+        <div class="pengurus-info">
+          <h3>Nur Imam Mohammad</h3>
+          <p>Klik untuk lihat profil</p>
+        </div>
+      </div>
+
+      <!-- Bendahara -->
+      <div class="pengurus-card" onclick="openProfile('bendahara')">
+        <div class="pengurus-img">
+          <img src="arum.jpg" alt="Bendahara HIMASTA">
+          <span class="badge">Bendahara</span>
+        </div>
+        <div class="pengurus-info">
+          <h3>Arum Kusmawaty Yusuf</h3>
+          <p>Klik untuk lihat profil</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- MODAL -->
+<div class="modal" id="profileModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <img id="modalImg" class="modal-img" src="" alt="">
+    <h2 id="modalName"></h2>
+    <p id="modalRole" class="modal-role"></p>
+    <p id="modalDesc"></p>
+
+    <a id="modalIg" href="#" target="_blank" class="ig-btn">
+      Lihat Instagram
+    </a>
+
+  </div>
+</div>
+
+
+
+<footer>
+  <p>© <span id="year"></span> HIMASTA Universitas Negeri Gorontalo</p>
+</footer>
+
+
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modal-img">
+  <div id="modal-caption"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
